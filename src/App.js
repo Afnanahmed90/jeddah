@@ -9,7 +9,7 @@ import {
 // import Resturants from './Resturants';
 import Cafes from './Cafes';
 // import Hotels from './Hotels';
-// import Places from './Places';
+ import Places from './Places';
 import guide from './DB'
 
 
@@ -41,8 +41,8 @@ class App extends Component {
         </div>
         {/* <Route path="/resturants" component={() => <Resturants list={resturants} />} /> */}
         <Route path="/cafes" component={() => <Cafes list={cafes} />} />
-        {/* <Route path="/places" component={() => <Places list={places} />} />
-        <Route path="/hotels" component={() => <Hotels list={hotels} />} /> */}
+        <Route path="/places" component={() => <Places list={places} />} /> 
+        {/* <Route path="/hotels" component={() => <Hotels list={hotels} />} /> */} 
 
       </Router>
 
