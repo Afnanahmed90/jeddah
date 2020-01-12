@@ -6,16 +6,15 @@ import {
   Route,
   Link
 } from 'react-router-dom';
-import Resturants from './Resturants';
+// import Resturants from './Resturants';
 import Cafes from './Cafes';
-import Hotels from './Hotels';
-import Places from './Places';
+// import Hotels from './Hotels';
+// import Places from './Places';
 import guide from './DB'
 
 
 
 class App extends Component {
-
 
   render() {
 
@@ -29,7 +28,8 @@ class App extends Component {
       <Router>
         <div className='logo'>
           <img className='appLogo' src={logo}></img>
-
+        </div>
+        <div>
           <nav>
             <Link to="/">Home</Link>{" "}
             <Link to="/resturants">Resturants</Link>{" "}
@@ -37,12 +37,12 @@ class App extends Component {
             <Link to="/places">Places</Link>{" "}
             <Link to="/hotels">Hotels</Link>
           </nav>
-        </div>
 
-        <Route path="/resturants" component={() => <Resturants list={resturants} />} />
+        </div>
+        {/* <Route path="/resturants" component={() => <Resturants list={resturants} />} /> */}
         <Route path="/cafes" component={() => <Cafes list={cafes} />} />
-        <Route path="/places" component={() => <Places list={places} />} />
-        <Route path="/hotels" component={() => <Hotels list={hotels} />} />
+        {/* <Route path="/places" component={() => <Places list={places} />} />
+        <Route path="/hotels" component={() => <Hotels list={hotels} />} /> */}
 
       </Router>
 
